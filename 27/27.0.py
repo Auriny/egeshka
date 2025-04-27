@@ -1,4 +1,8 @@
-a = [1, 3, 5, 7, 9]
+a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+c = 0
 for i in range(0, len(a)):
     for j in range(i + 1, len(a)):
-        print(a[i], a[j])
+        if (a[i] + a[j]) % 4 == 0:
+            c += 1
+
+print(c)
