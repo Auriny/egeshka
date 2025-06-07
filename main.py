@@ -1,4 +1,7 @@
-print(bin(45)[2:].zfill(8), bin(232)[2:].zfill(8), bin(40)[2:].zfill(8), bin(126)[2:].zfill(8))
-print(bin(255)[2:].zfill(8), bin(255)[2:].zfill(8), bin(102)[2:].zfill(8), bin(0)[2:].zfill(8))
+from ipaddress import *
 
-print(int('', 2))
+k = 0
+for ip in ip_network('192.160.80.25/255.255.252.0', 0):
+    k += 1
+
+print(k - 15)
