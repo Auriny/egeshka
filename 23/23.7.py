@@ -5,6 +5,6 @@ def f(x, y):
         return 0
     if x == y:
         return 1
-    return f(x - 2, y) + f(x // 2, y)
+    return f(x - 2, y) + f(x - 5, y)
 
-print(f(38, 16) * f(16, 2))
+print(f(32, 12))

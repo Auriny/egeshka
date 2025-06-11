@@ -1,7 +1,6 @@
-from ipaddress import *
+def kv(n):
+    if len(str(n ** 0.5)[2:]) == len(str(int(n ** 0.5))):
+        return True
+    return False
 
-k = 0
-for ip in ip_network('192.160.80.25/255.255.252.0', 0):
-    k += 1
-
-print(k - 15)
+print(kv(4))

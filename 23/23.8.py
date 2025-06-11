@@ -1,7 +1,7 @@
 # https://openfipi.devinf.ru/task/DD7C72
 
 def f(x, y):
-    if x > 15:  # прекращаем, если число больше 15
+    if x > y:
         return 0
     if x == y:
         return 1
